@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+      
+     .box{
+        background-color: aqua ;
+        margin: 5px;
+        height: 10vh;
+        width: 10vw;
+     }
+     .mainbox {
+        display: flex;
+        position: relative;
+     }
+     @media (max-width:700px) {
+        .mainbox + .box{
+            background-color: black;
+        }    
+     }
+     .box1 {
+        background-color: aqua ;
+        margin: 5px;
+        height: 10vh;
+        width: 10vw;
+        position: absolute;
+        right: 0px;
+        transition:all 1s;
+     }
+     .box1:hover{
+        background-color: black;
+        cursor: pointer;
+        opacity: 0;
+     }
+     .icon{
+        transition: background-color 1s ;
+     }
+
+      .icon:hover{
+        color: blue;
+        background-color: black;
+        
+     }
+     
+    
+
+      
+      
+        
+    </style>
+</head>
+<body>
+    <div class="mainmenü">
+        <label class="icon" for="menü"> <i class="fa-solid fa-magnifying-glass"></i></label>
+        <input class="btn" type="text" id="menü">
+    </div>
+
+   <div class="mainbox">
+    <div class="box1">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+     
+   </div>
+
+
+</body>
+</html>
